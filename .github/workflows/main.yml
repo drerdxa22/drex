@@ -137,11 +137,3 @@ jobs:
         python xer.py --brave --incognito --do-not-track --xvfb --screenshot
       shell: bash
 
-    # ---------------------------------------------------------
-    # Upload screenshots
-    # ---------------------------------------------------------
-    - name: Upload screenshots
-      uses: actions/upload-artifact@v4
-      with:
-        name: seleniumbase-screenshots
-        path: ./latest_logs/
